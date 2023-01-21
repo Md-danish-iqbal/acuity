@@ -19,6 +19,25 @@
  		 }
 		})
 	</script>
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.js"
+	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	crossorigin="anonymous"></script>
+<script>
+	function SubForm (){
+		$.ajax({
+			url:"https://api.apispreadsheets.com/data/5S8utBL5sGBX4mpm/",
+			type:"post",
+			data:$("#myForm").serializeArray(),
+			success: function(){
+				alert("Form Data Submitted :)")
+			},
+			error: function(){
+				alert("There was an error :(")
+			}
+		});
+	}
+</script>
 </head>
 <body>
 <!-- Navigation Bar -->
@@ -28,13 +47,18 @@
 			<ul>
 				<li><a class="active" href="">Home</a></li>
 				<li><a href="#services_section">We offer</a></li>
-				<li><a href="#team_section">Faculty</a></li>
+				<li><a href="#team_section">Team</a></li>
 				<li><a href="#services_section">Announcements</a></li>   
 				<li><a href="#contactus_section">Contact</a></li>
 			</ul>
-			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
-			<a class="get-started" href="login.html">Go !</a>
-			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+			<div >
+				<!-- <input type="text" class="search" placeholder="Search here...">
+				<img src="images/icon/search.png" alt="search" onclick=slide()> -->
+				
+			</div>
+			<!-- <a class="get-started" href="login.html">Go !</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu"> -->
+			
 		</nav>
 		<div class="head-container">
 			<div class="quote">
@@ -61,7 +85,7 @@
 				<li><a href="#about_section">About</a></li>
 				<li><a href="#portfolio_section">We offer<</a></li>
 				<li><a href="#team_section">Faculty</a></li>
-				<li><a href="#services_section">Announcements</a></li>
+				<li><a href="commingsoon.html">Announcements</a></li>
 				<li><a href="#contactus_section">Contact</a></li>
 				<li><a href="#feedBACK">Feedback</a></li>
 			</ul>
@@ -132,7 +156,7 @@
 
 <!-- TEAM -->
 	<div class="diffSection" id="team_section">
-		<center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Faculty</p></center>
+		<center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Team</p></center>
 		<div class="totalcard">
 			<div class="card">
 				<center><img src="images/creator/dp_m.png"></center>
@@ -140,7 +164,7 @@
 				<div id="detail">
 					<p>B.Tech in Computer Science<br>Maths Faculty</p>
 					<div class="duty"></div>
-					<a href="#" target="_blank"><button class="btn-roshan">Follow +</button></a>
+<!--					<a href="#" target="_blank"><button class="btn-roshan">Follow +</button></a>-->
 				</div>
 				</center>
 			</div>
@@ -150,27 +174,27 @@
 				<div id="detail">
 					<p>B.Tech in Mechanical Engineering<br>Maths/Physics Faculty</p>
 					<div class="duty"></div>
-					<a href="#" target="_blank"><button class="btn-akhil">Follow +</button></a>
+<!--					<a href="#" target="_blank"><button class="btn-akhil">Follow +</button></a>-->
 				</div>
 				</center>
 			</div>
             <div class="card">
 				<center><img src="images/creator/dp_m.png"></center>
-				<center><div class="card-title">Zakaullah</div>
+				<center><div class="card-title">Md Zakaullah</div>
 				<div id="detail">
-					<p>B.Tech in Electrical Engineering <br>Physics Faculty</p>
+					<p>B.Tech in Electrical Engineering <br>Maths/Physics Faculty</p>
 					<div class="duty"></div>
-					<a href="#" target="_blank"><button class="btn-roshan">Follow +</button></a>
+<!--					<a href="#" target="_blank"><button class="btn-roshan">Follow +</button></a>-->
 				</div>
 				</center>
 			</div>
             <div class="card">
 				<center><img src="images/creator/dp_m.png"></center>
-				<center><div class="card-title">Adil Shaharyar</div>
+				<center><div class="card-title">Md Adil Shaharyar</div>
 				<div id="detail">
-					<p>PhD, J.U <br>Chemistry Faculty</p>
+					<p>PhD(Pharm.Tech), Jadavpur University <br>Chemistry Faculty</p>
 					<div class="duty"></div>
-					<a href="#" target="_blank"><button class="btn-akhil">Follow +</button></a>
+<!--					<a href="#" target="_blank"><button class="btn-akhil">Follow +</button></a>-->
 				</div>
 				</center>
 			</div>
@@ -180,17 +204,37 @@
 				<div id="detail">
 					<p>Masters in Optometry <br>Biology Faculty</p>
 					<div class="duty"></div>
-					<a href="#" target="_blank"><button class="btn-roshan">Follow +</button></a>
+<!--					<a href="#" target="_blank"><button class="btn-roshan">Follow +</button></a>-->
 				</div>
 				</center>
 			</div>
             <div class="card">
 				<center><img src="images/creator/dp_m.png"></center>
-				<center><div class="card-title">Shahzad</div>
+				<center><div class="card-title">Md Shahzad Alam</div>
 				<div id="detail">
 					<p>B.Tech in Computer Science <br>Computer Faculty</p>
 					<div class="duty"></div>
-					<a href="#" target="_blank"><button class="btn-akhil">Follow +</button></a>
+<!--					<a href="#" target="_blank"><button class="btn-akhil">Follow +</button></a>-->
+				</div>
+				</center>
+			</div>
+            <div class="card">
+				<center><img src="images/creator/dp_m.png"></center>
+				<center><div class="card-title">Md Danish Iqbal</div>
+				<div id="detail">
+					<p>B.Tech in Computer Science <br>Computer Faculty</p>
+					<div class="duty"></div>
+<!--					<a href="#" target="_blank"><button class="btn-akhil">Follow +</button></a>-->
+				</div>
+				</center>
+			</div>
+            <div class="card">
+				<center><img src="images/creator/dp_m.png"></center>
+				<center><div class="card-title">Moinur Rahman</div>
+				<div id="detail">
+					<p>M.Ch.E (Masters in Chem.Eng),<br> Jadavpur University <br>Coordinator</p>
+					<div class="duty"></div>
+<!--					<a href="#" target="_blank"><button class="btn-akhil">Follow +</button></a>-->
 				</div>
 				</center>
 			</div>
@@ -203,14 +247,14 @@
 		<div class="diffSection" id="services_section">
 		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">We offer</p></center>
 		</div>
-		<a href="subjects/computer_courses.html"><div class="s-card"><img src="images/icon/computer-courses.png"><p>Online Classes for class IX and X (ICSE, CBSE and Madhyamik)</p></div></a>
-		<a href="subjects/jee.html"><div class="s-card"><img src="images/icon/brainbooster.png"><p>Regular mock test</p></div></a>
+		<a href="#"><div class="s-card"><img src="images/icon/computer-courses.png"><p>Online Classes for class IX and X (ICSE, CBSE and Madhyamik)</p></div></a>
+		<a href="#"><div class="s-card"><img src="images/icon/brainbooster.png"><p>Regular mock test</p></div></a>
 		<a href="#"><div class="s-card"><img src="images/icon/online-tutorials.png"><p>Building concept for competitive exams like AMU class XI admission Exam preparation</p></div></a>
-		<a href="subjects/jee.html#sample_papers"><div class="s-card"><img src="images/icon/papers.jpg"><p>Sample Papers of Various Competitive Exams</p></div></a>
+		<a href="#"><div class="s-card"><img src="images/icon/papers.jpg"><p>Sample Papers of Various Competitive Exams</p></div></a>
 		<a href="#"><div class="s-card"><img src="images/icon/p3.png"><p>Solving sample papers of different exams </p></div></a>
-		<a href="#contactus_section"><div class="s-card"><img src="images/icon/discussion.png"><p>Peformance and ranking reports</p></div></a>
-		<a href="subjects/quiz.html"><div class="s-card"><img src="images/icon/q1.png"><p>Discussion with our tutors </p></div></a>
-		<a href="#contactus_section"><div class="s-card"><img src="images/icon/help.png"><p>Weekly brain teasors</p></div></a>
+		<a href="#"><div class="s-card"><img src="images/icon/discussion.png"><p>Peformance and ranking reports</p></div></a>
+		<a href="#"><div class="s-card"><img src="images/icon/q1.png"><p>Discussion with our tutors </p></div></a>
+		<a href="#"><div class="s-card"><img src="images/icon/help.png"><p>Weekly brain teasors</p></div></a>
 	</div>
 
 <!-- Reviews by Students -->
@@ -283,7 +327,7 @@
 		<div class="csec"></div>
 		<div class="back-contact">
 			<div class="cc">
-			<form action="mailto:roshank9419@gmail.com" method="post" enctype="text/plain">
+			<form method="post" enctype="text/plain" id="myForm">
 				<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
 				<center>
 				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
@@ -294,7 +338,7 @@
 				<input type="text" name="message" style="width: 100%" required="required"><br>
 				<label>Additional Details</label><br>
 				<textarea name="addtional"></textarea><br>
-				<button type="submit" id="csubmit">Send Message</button>
+				<button type="submit"id='csubmit' onclick='SubForm()'>Send Message</button>
 			</form>
 			</div>
 		</div>
@@ -330,7 +374,7 @@
 	<footer>
 		<div class="footer-container">
 			<div class="left-col">
-				<img src="images/icon/image.png" style="width: 200px;">
+                <h1>Acuity Education</h2>
 				<div class="logo"></div>
 <!--
 				<div class="social-media">
@@ -342,8 +386,8 @@
 				</div><br><br>
 -->
 				<p class="rights-text">Copyright © 2022 Created By Acuity Education, All Rights Reserved.</p>
-				<br><p><img src="images/icon/location.png"> Acuity Education, Taltala, Kolkata-14</p><br>
-				<p><img src="images/icon/phone.png"> +91-97489-02723<br><img src="images/icon/mail.png">&nbsp; acuity-educationn@gmail.com</p>
+				<br><p><img src="images/icon/location.png"> Acuity Education, Taltala, Kolkata-14</p>
+				<p><img src="images/icon/phone.png"> +91-85830 67552<br><img src="images/icon/mail.png">&nbsp; acuity-educationn@gmail.com</p>
 			</div>
 			<div class="right-col">
 				<h1 style="color: #fff">Our Newsletter</h1>
